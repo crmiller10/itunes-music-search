@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <title>iTunes Music App</title>
+  <link rel="stylesheet" type="text/css" href="styles/reset.css">
+  <link rel="stylesheet" type="text/css" href="styles/main.css">
+</head>
+<body>
+  <main>
+    <div class="app-header fixed-top shadow">
+      <section class="">
+        <div class="container">
+          <div class="header">
+            <h1>iTunes Music App</h1>
+          </div>
+        </div>
+      </section>
+      <section class="section-player">
+        <div class="container">
+          <div class="player">
+            <audio class="music-player" controls="controls" autoplay></audio>
+            <p class="now-playing"></p>
+          </div>
+        </div>
+      </section>
+      <section class="section-search">
+        <div class="container">
+          <div class="search-bar">
+            <input type="text" placeholder="Search for Artist" id="search-box" value=''>
+            <button class="" type="submit" id="search-button" value="">Search</button>
+          </div>
+        </div>
+      </section>
+    </div>
+    <div class="container">
+      <section class="results">
+        <section class="results-title">
+          <h3>Search Results:</h3>
+        </section>
+      </section>
+    </div>
+  </main>
+  <script src="scripts/main.js"></script>
+</body>
+</html>

@@ -1,0 +1,364 @@
+*,
+*:before,
+*:after {
+  box-sizing: border-box;
+}
+
+html {
+  height: 100%;
+}
+
+body {
+  width: 100%;
+  -webkit-font-smoothing: antialiased;
+  height: 100%;
+  padding: 0;
+  margin: 0;
+  font-size: 16px;
+  background-color: #fff;
+  font-family: 'Open Sans', Helvetica, Arial, sans-serif;
+}
+
+/* Layout
+––––––––––––––––––––––––––––––––––– */
+.container {
+  padding-right: 15px;
+  padding-left: 15px;
+  margin-right: auto;
+  margin-left: auto;
+}
+@media (min-width: 768px) {
+  .container {
+    width: 100%;
+  }
+}
+@media (min-width: 992px) {
+  .container {
+    width: 100%;
+  }
+}
+@media (min-width: 1200px) {
+  .container {
+    width: 1170px;
+  }
+}
+
+
+main {
+  height: 100%;
+  position: relative;
+  background: #ffffff;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5 {
+  margin: 0;
+  padding: 0;
+}
+
+.app-header {
+  margin: auto;
+  padding-top: 40px;
+  position: relative;
+  display: block;
+  background-color: #21A0A0;
+}
+
+.shadow {
+  border-radius: 0;
+  box-shadow: 0 -1px 8px 0.5px #000;
+  /*box-shadow: 0px 0px 10px 0px;*/
+}
+
+.fixed-top {
+  position: fixed;
+  top: 0;
+  right: 0;
+  width: 100%;
+  left: 0;
+  z-index: 10000;
+}
+
+.header h1 {
+  text-align: center;
+  font-size: 42px;
+  margin-bottom: 20px;
+  color: #fff;
+}
+
+/* Music Player
+––––––––––––––––––––––––––––––––––– */
+
+.section-player {
+  border-radius: 3px;
+  padding-bottom: 40px;
+  padding-top: 20px;
+}
+
+.player {
+  text-align: left;
+  background: #FAFAF9;
+  width: 100%;
+  margin: auto;
+  border-radius: 2px;
+  padding: 15px 0 5px;
+  /*box-shadow: 0 27px 55px 0 rgba(0, 0, 0, 0.3), 0 17px 17px 0 rgba(0, 0, 0, 0.15);*/
+  /*box-shadow: 0px 0px 20px 5px rgba(19, 27, 27, 0.16);*/
+}
+
+@media (min-width: 768px) {
+  .player {
+    width: 60%;
+  }
+}
+.player .music-player {
+  margin: 0 auto;
+  width: 100%;
+  padding: 0 15px;
+  padding-bottom: 5px;;
+}
+
+.now-playing {
+  color: #141414;
+  text-align: center;
+  margin: 0;
+  padding-top: 10px;
+  padding-left: 10px;
+  font-weight: 600;
+  padding: 10px;
+  border-top: 1px solid #efefef;;;
+}
+
+
+/* =====================================
+Section Search
+===================================== */
+.section-search {
+  background-color: #efefef;
+
+}
+
+.search-bar {
+  text-align: center;
+  display: flex;
+  align-items: center;
+  height: 100px;
+  margin: auto;
+  justify-content: center;
+  border-radius: 0;
+}
+
+
+/* Search Box
+––––––––––––––––––––––––––––––––––– */
+
+#search-box {
+  height: 45px;
+  outline: none;
+  padding: 0 20px;
+  text-align: left;
+  width: 90%;
+  border: 1px solid rgb(239, 239, 239);
+  border-radius: 3px;
+}
+
+#search-box:focus {
+  border: 1px solid #4285F4;
+  color: #4285F4;
+  transition: 0.25s ease all;
+}
+
+#search-box:focus::-webkit-input-placeholder {
+  transition: opacity 0.45s ease;
+  opacity: 0;
+}
+
+#search-box:focus::-moz-placeholder {
+  transition: opacity 0.45s ease;
+  opacity: 0;
+}
+
+#search-box:focus:-ms-placeholder {
+  transition: opacity 0.45s ease;
+  opacity: 0;
+}
+
+button,
+input,
+select,
+textarea {
+  font-family: inherit;
+  font-size: inherit;
+  line-height: inherit;
+}
+
+button:focus {
+  outline: none;
+  outline: 0;
+}
+
+
+#search-button {
+  display: inline-block;
+  margin-bottom: 0;
+  font-size: 14px;
+  font-weight: 400;
+  text-align: center;
+  white-space: nowrap;
+  vertical-align: middle;
+  -ms-touch-action: manipulation;
+  touch-action: manipulation;
+  cursor: pointer;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  background-image: none;
+  border: 1px solid transparent;
+  border-radius: 3px;
+  height: 45px;
+  width: 100px;
+  padding: 0;
+  line-height: 1.42857143;
+  margin-left: 10px;
+  background: #4285F4;
+  color: #fff;
+  transition: ease all .1s;
+}
+
+#search-button:hover {
+  background: rgb(26, 90, 197);
+  color: #fff;
+}
+
+/* =====================================
+Search Results
+======================================== */
+
+.results {
+  text-align: center;
+  display: flex;
+  flex-wrap: wrap;
+  margin: 0 auto;
+  justify-content: center;
+  position: relative;
+  top: 356px;
+}
+
+.results-title {
+  text-align: left;
+  display: block;
+  color: #141414;
+  width: 1000%;
+}
+
+.results-title h3 {
+  margin-bottom: 40px;
+  margin-top: 20px;
+  font-size: 18px;
+  font-weight: 600;
+}
+
+/* Results - Article
+––––––––––––––––––––––––––––––––––– */
+
+article {
+  position: relative;
+  text-align: center;
+  -webkit-box-align: center;
+  align-items: center;
+  align-content: center;
+  padding: 10px;
+  border: 1px solid #fff;
+  box-sizing: border-box;
+  min-height: 1px;
+  width: 100%;
+  display: block;
+  margin-bottom: 20px;
+  -ms-flex-preferred-size: 0;
+  -ms-flex-positive: 1;
+}
+article {
+  max-width: 100%;
+  flex-basis: 100%;
+}
+
+@media (min-width: 540px) {
+  article {
+     max-width: 33%;
+    flex-basis: 33%;
+  }
+}
+@media (min-width: 768px) {
+  article {
+    max-width: 22%;
+    flex-basis: 22%;
+  }
+}
+@media (min-width: 992px) {
+  article {
+    max-width: 22%;
+    flex-basis: 22%;
+  }
+}
+@media (min-width: 1200px) {
+  article {
+    max-width: 22%;
+    flex-basis: 22%;
+  }
+}
+
+article:hover {
+  cursor: pointer;
+}
+
+/* Article Elements
+––––––––––––––––––––––––––––––––––– */
+article img {
+  height: 100px;
+  width: 100px;
+  border-radius: 4px;
+}
+
+article h2 {
+  font-size: 14px;
+  font-weight: 600;
+  margin-top: 10px;
+}
+
+article h3 {
+  font-size: 12px;
+  margin-top: 8px;
+}
+
+article:after {
+  content: '';
+  z-index: 999;
+  position: absolute;
+  height: 100%;
+  top: 0;
+  width: 100%;
+  right: 0;
+  display: none;
+  background-position: 50% 50%;
+  -webkit-background-size: 50%;
+  background-size: 50px;
+  background-repeat: no-repeat;
+  font-size: inherit;
+  transition: ease all 3s;
+}
+article:hover:after {
+  content: "";
+  z-index: 1000;
+  position: absolute;
+  height: 100%;
+  top: 0;
+  right: 0;
+  background-color: rgba(255, 255, 255, 0.48);
+  display: block;
+  background-repeat: no-repeat;
+  transition: ease all 3s;
+}
